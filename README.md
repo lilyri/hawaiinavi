@@ -1,4 +1,4 @@
 # hawaiinavi
 Coded Site for a travel information website
 
-[View my site](https://github.com/lilyri/hawaiinavi)
+[View my site](https://lilyri.github.io/hawaiinavi/)
