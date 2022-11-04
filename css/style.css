@@ -74,6 +74,21 @@ h3 {
   line-height: 1.2;
 }
 
+h4 {
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+h5 {
+  font-size: 1em;
+  line-height: 1.1;
+}
+
+h6 {
+  font-size: 0.8em;
+  line-height: 1.2;
+}
+
 /* LIMIT NUMBER OF CHARACTERS PER LINE */
 p {
   max-width: 45em;
@@ -183,11 +198,12 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: -1%;
-  margin-right: -gridgap/2;
+  margin-right: -1%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
+  width: 100%;
 }
 .row > * {
   margin: 1%;
@@ -289,6 +305,9 @@ body {
 }
 .site-header .logomark {
   margin-right: 0.7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .site-header a {
   color: white;
@@ -298,17 +317,14 @@ body {
   font-size: 1.5em;
   margin: 0;
 }
+.site-header h4 {
+  margin: 0;
+}
 
 /* SITE FOOTER */
 .site-footer {
-  background: rgb(10, 6, 90);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  background: #FEE6E3;
   padding: 1em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .site-footer a {
   color: white;
@@ -328,6 +344,21 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.two-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h6 {
+  margin: 0;
+}
+
+.one-third {
+  width: 26%;
+  margin: 1%;
 }
 
 /* HERO SECTION */
@@ -350,6 +381,27 @@ section {
 }
 .hero p {
   margin: 1em auto;
+}
+
+.hero.bg-img {
+  background-image: url("../image/sunset_background_image.jpg");
+  min-height: 1200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.thumbgroup {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.thumbgroup img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* SITE-NAV */

@@ -15,6 +15,7 @@
 
     .logomark {
         margin-right: .7em;
+        display: flex;
     }
     
     a {
@@ -27,14 +28,16 @@
         margin: 0;
     }
 
+    h4 {
+        margin: 0;
+    }
+
 }
 
 /* SITE FOOTER */
 .site-footer {
-    background: $color-accent-dark; 
-    display: flex;
+    background: #FEE6E3; 
     padding: 1em;
-    justify-content: center;
     
     a {
         color: white;
@@ -55,7 +58,22 @@ section {
 }
 
 
+.two-up {
+    display: flex;
+  }
+  
+  h6 { 
+  margin: 0;
+  }
+  
+  .one-third {
+    width: 26%;
+    margin: 1%;
+  }
+
+
 /* HERO SECTION */
+
 .hero {
     background-color: $color-accent-dark;
     text-align: center;
@@ -74,6 +92,23 @@ section {
     }
 }
 
+.hero.bg-img {
+    background-image: url("../image/sunset_background_image.jpg");
+    min-height: 1200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+
+.thumbgroup {
+    align-items: flex-start;
+}
+
+.thumbgroup img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 
