@@ -10,6 +10,14 @@ body {
     padding: 0 1em;
 }
 
+/* SIDE-CONTAINER */
+.side-container {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0 1em;
+    display: flex;
+}
+
 /* MEDIA QUERIES */
 
 /* RESPONSIVE TYPOGRAPHY */
@@ -24,3 +32,6 @@ body { font-size: 87.5%; }
     body { font-size: 112.5%; }
 }
 
+.two-col-with-aside {
+    display: flex;
+}

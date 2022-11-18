@@ -16,7 +16,7 @@
  
 }
 
-.site-header {
+.homepage {
 
     .site-nav {
  
@@ -143,4 +143,13 @@
         
     }
 
+}
+
+.subpage {
+    .site-header {
+        background-color: blue;
+        position: static;
+    }
+    .site-nav {
+    }
 }

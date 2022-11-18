@@ -175,6 +175,16 @@ body {
   padding: 0 1em;
 }
 
+/* SIDE-CONTAINER */
+.side-container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* MEDIA QUERIES */
 /* RESPONSIVE TYPOGRAPHY */
 body {
@@ -191,6 +201,12 @@ body {
     font-size: 112.5%;
   }
 }
+.two-col-with-aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* SEMANTIC GRID */
 .row {
   display: -webkit-box;
@@ -338,13 +354,6 @@ body {
 
 section {
   padding: 4em 0;
-  min-height: 101vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .two-up {
@@ -420,7 +429,7 @@ h6 {
   line-height: 1;
 }
 
-.site-header .site-nav ul {
+.homepage .site-nav ul {
   background: red;
   position: fixed;
   top: 0;
@@ -446,11 +455,11 @@ h6 {
   transition: all 0.3s ease-out;
   z-index: 100;
 }
-.site-header .site-nav[data-navstate=closed] ul {
+.homepage .site-nav[data-navstate=closed] ul {
   -webkit-transform: translate(100%, 0%);
           transform: translate(100%, 0%);
 }
-.site-header .site-nav li {
+.homepage .site-nav li {
   opacity: 0;
   -webkit-transform: translate(50px, 0);
           transform: translate(50px, 0);
@@ -459,84 +468,84 @@ h6 {
   transition: 0.3s opacity linear 0s, 0.2s transform ease-out 0.2s;
   transition: 0.3s opacity linear 0s, 0.2s transform ease-out 0.2s, 0.2s -webkit-transform ease-out 0.2s;
 }
-.site-header .site-nav li:nth-child(0) {
+.homepage .site-nav li:nth-child(0) {
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
-.site-header .site-nav li:nth-child(1) {
+.homepage .site-nav li:nth-child(1) {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
-.site-header .site-nav li:nth-child(2) {
+.homepage .site-nav li:nth-child(2) {
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
-.site-header .site-nav li:nth-child(3) {
+.homepage .site-nav li:nth-child(3) {
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
-.site-header .site-nav li:nth-child(4) {
+.homepage .site-nav li:nth-child(4) {
   -webkit-transition-delay: 0.6s;
           transition-delay: 0.6s;
 }
-.site-header .site-nav li:nth-child(5) {
+.homepage .site-nav li:nth-child(5) {
   -webkit-transition-delay: 0.7s;
           transition-delay: 0.7s;
 }
-.site-header .site-nav li:nth-child(6) {
+.homepage .site-nav li:nth-child(6) {
   -webkit-transition-delay: 0.8s;
           transition-delay: 0.8s;
 }
-.site-header .site-nav li:nth-child(7) {
+.homepage .site-nav li:nth-child(7) {
   -webkit-transition-delay: 0.9s;
           transition-delay: 0.9s;
 }
-.site-header .site-nav[data-navstate=open] .menu-button {
+.homepage .site-nav[data-navstate=open] .menu-button {
   position: fixed;
   top: 1.9em;
   right: 1.5em;
 }
-.site-header .site-nav[data-navstate=open] li {
+.homepage .site-nav[data-navstate=open] li {
   opacity: 1;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
-.site-header .site-nav[data-navstate=closed] li {
+.homepage .site-nav[data-navstate=closed] li {
   -webkit-transition: none;
   transition: none;
 }
-.site-header .site-nav .menu-button {
+.homepage .site-nav .menu-button {
   background-color: transparent;
   border: none;
   color: white;
   padding: 0.7em;
   z-index: 200;
 }
-.site-header .site-nav .menu-button svg {
+.homepage .site-nav .menu-button svg {
   display: block;
 }
-.site-header .site-nav .menu-button svg rect {
+.homepage .site-nav .menu-button svg rect {
   fill: white;
 }
-.site-header .site-nav .menu-button svg.simple-x-animation rect {
+.homepage .site-nav .menu-button svg.simple-x-animation rect {
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.site-header .site-nav[data-navstate=open] .menu-button svg.simple-x-animation #menubar-top {
+.homepage .site-nav[data-navstate=open] .menu-button svg.simple-x-animation #menubar-top {
   -webkit-transform: translate(-5px, 9px) rotate(30deg);
           transform: translate(-5px, 9px) rotate(30deg);
 }
-.site-header .site-nav[data-navstate=open] .menu-button svg.simple-x-animation #menubar-mid {
+.homepage .site-nav[data-navstate=open] .menu-button svg.simple-x-animation #menubar-mid {
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
 }
-.site-header .site-nav[data-navstate=open] .menu-button svg.simple-x-animation #menubar-bot {
+.homepage .site-nav[data-navstate=open] .menu-button svg.simple-x-animation #menubar-bot {
   -webkit-transform: translate(-5px, -9px) rotate(-30deg);
           transform: translate(-5px, -9px) rotate(-30deg);
 }
-.site-header .site-nav .menu-button svg.squish-x-animation rect {
+.homepage .site-nav .menu-button svg.squish-x-animation rect {
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-animation-duration: 0.5s;
@@ -546,24 +555,24 @@ h6 {
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
-.site-header .site-nav .menu-button svg.squish-x-animation #menubar-top {
+.homepage .site-nav .menu-button svg.squish-x-animation #menubar-top {
   -webkit-animation-name: squish-x-top-close;
           animation-name: squish-x-top-close;
 }
-.site-header .site-nav .menu-button svg.squish-x-animation #menubar-bot {
+.homepage .site-nav .menu-button svg.squish-x-animation #menubar-bot {
   -webkit-animation-name: squish-x-bot-close;
           animation-name: squish-x-bot-close;
 }
-.site-header .site-nav[data-navstate=open] .menu-button svg.squish-x-animation #menubar-top {
+.homepage .site-nav[data-navstate=open] .menu-button svg.squish-x-animation #menubar-top {
   -webkit-animation-name: squish-x-top-open;
           animation-name: squish-x-top-open;
 }
-.site-header .site-nav[data-navstate=open] .menu-button svg.squish-x-animation #menubar-mid {
+.homepage .site-nav[data-navstate=open] .menu-button svg.squish-x-animation #menubar-mid {
   opacity: 0;
   -webkit-transition: all 0s linear 0.25s;
   transition: all 0s linear 0.25s;
 }
-.site-header .site-nav[data-navstate=open] .menu-button svg.squish-x-animation #menubar-bot {
+.homepage .site-nav[data-navstate=open] .menu-button svg.squish-x-animation #menubar-bot {
   -webkit-animation-name: squish-x-bot-open;
           animation-name: squish-x-bot-open;
 }
@@ -680,6 +689,10 @@ h6 {
   }
 }
 
+.subpage .site-header {
+  background-color: blue;
+  position: static;
+}
 /* CSS ANIMATIONS */
 /* ANIMATE THE HERO ON LOAD */
 .hero h1 {

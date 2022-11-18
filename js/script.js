@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // OPEN AND CLOSE SITE NAV MENU
-    const mysitenav = document.querySelector('.site-nav');
+    const mysitenav = document.querySelector('.homepage .site-nav');
     const mymenubutton = document.querySelector('.menu-button');
     mymenubutton.onclick = function () {
         if (mysitenav.getAttribute('data-navstate') === 'closed') {
