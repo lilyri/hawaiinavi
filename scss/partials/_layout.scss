@@ -18,6 +18,28 @@ body {
     display: flex;
 }
 
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.sectiontitle {
+    text-align: center;
+}
+
+.newstitle {
+    text-align: left;
+}
+
+.date {
+    text-align: right
+}
+
+
+
+
 /* MEDIA QUERIES */
 
 /* RESPONSIVE TYPOGRAPHY */
@@ -32,6 +54,20 @@ body { font-size: 87.5%; }
     body { font-size: 112.5%; }
 }
 
-.two-col-with-aside {
-    display: flex;
+@media (min-width: $breakpoint-small) {
+    .two-col-with-aside {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .two-col-with-aside > section {
+        width: 58.33%;
+        background-color: pink;
+    }
+
+    .two-col-with-aside aside {
+        width: 33.33%;
+        background-color: teal;
+    }
 }
