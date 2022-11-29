@@ -12,10 +12,7 @@ body {
 
 /* SIDE-CONTAINER */
 .side-container {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 0 1em;
-    display: flex;
+
 }
 
 .displayed {
@@ -63,11 +60,11 @@ body { font-size: 87.5%; }
 
     .two-col-with-aside > section {
         width: 58.33%;
-        background-color: pink;
+        // background-color: pink;
     }
 
     .two-col-with-aside aside {
         width: 33.33%;
-        background-color: teal;
+        // background-color: teal;
     }
 }

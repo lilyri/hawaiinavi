@@ -176,15 +176,6 @@ body {
 }
 
 /* SIDE-CONTAINER */
-.side-container {
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 0 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .displayed {
   display: block;
   margin-left: auto;
@@ -232,11 +223,9 @@ body {
   }
   .two-col-with-aside > section {
     width: 58.33%;
-    background-color: pink;
   }
   .two-col-with-aside aside {
     width: 33.33%;
-    background-color: teal;
   }
 }
 /* SEMANTIC GRID */
@@ -352,11 +341,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.site-header .site-id h3 {
+  color: white;
+  margin: 0;
+}
 .site-header .logomark {
   margin-right: 0.7em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .site-header a {
   color: white;
