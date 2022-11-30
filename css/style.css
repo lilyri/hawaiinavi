@@ -144,6 +144,11 @@ hr {
   left: -9999px;
 }
 
+hr {
+  background-color: red;
+  height: 5px;
+}
+
 /* BUTTONS */
 .button {
   display: inline-block;
