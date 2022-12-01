@@ -2,13 +2,14 @@
 body { color: $color-text-body; }
 
   /* BASE HEADLINES */
-  h1, h2, h3, h4, h5, h6 { color: $color-text-headings;
+  h1, h2, h3, h4, h5, h6 { 
+    color: $color-text-headings;
+    font-weight: 700;
   }
 
   /* BASE TEXT FONTS */
   body { font-family: $font-family-sans; }
   h1, h2, h3, h4, h5, h6, p { font-family: $font-family-serif; 
-    font-weight: 700;
     font-style: nomal;
   }
 
@@ -17,7 +18,10 @@ body { color: $color-text-body; }
     font-size: 100%;
     line-height: 1.4;
   }
-  h1, h2, h3, h4, h5, h6 { margin: 0 0 .5em 0; }
+  h1, h2, h3, h4, h5, h6 { 
+    margin: 0 0 .5em 0; 
+  }
+
   
   /* TRADITIONAL TYPOGRAPHY SCALE */
   

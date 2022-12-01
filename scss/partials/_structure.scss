@@ -51,6 +51,7 @@
 
 .site-main {
     overflow-x: hidden;
+    padding-bottom: 6em;
 }
 
 
@@ -114,4 +115,6 @@ section {
     object-fit: cover;
   }
 
-
+.container_video {
+    diaplay: flex;
+}

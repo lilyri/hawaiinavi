@@ -35,6 +35,7 @@ body {
 /* BASE HEADLINES */
 h1, h2, h3, h4, h5, h6 {
   color: rgb(0, 0, 0);
+  font-weight: 700;
 }
 
 /* BASE TEXT FONTS */
@@ -44,7 +45,6 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: "kepler-std-display", Georgia, "Times New Roman", Times, serif;
-  font-weight: 700;
   font-style: nomal;
 }
 
@@ -97,10 +97,10 @@ p {
 
 /* LINKS */
 a {
-  color: rgb(61, 90, 255);
+  color: #7cddca;
 }
 a:hover {
-  color: rgb(19, 41, 15);
+  color: #04715b;
 }
 
 /* HORIZONTAL LINE */
@@ -149,17 +149,22 @@ hr {
   height: 5px;
 }
 
+.info hr {
+  background-color: greenyellow;
+}
+
 /* BUTTONS */
 .button {
   display: inline-block;
-  background-color: rgb(61, 90, 255);
-  color: #fff;
+  background-color: #7cddca;
+  color: black;
   text-decoration: none;
-  padding: 1em;
-  border-radius: 5px;
+  padding: 1em 2em;
+  border-radius: 30px;
 }
 .button:hover {
-  background-color: rgb(19, 41, 15);
+  background-color: #35b89e;
+  color: white;
 }
 
 /* RESPONSIVE IMAGES */
@@ -377,6 +382,7 @@ body {
 
 .site-main {
   overflow-x: hidden;
+  padding-bottom: 6em;
 }
 
 section {
@@ -439,6 +445,10 @@ h6 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.container_video {
+  diaplay: flex;
 }
 
 /* SITE-NAV */
