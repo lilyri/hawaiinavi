@@ -35,17 +35,17 @@ body {
 /* BASE HEADLINES */
 h1, h2, h3, h4, h5, h6 {
   color: rgb(0, 0, 0);
-  font-weight: 700;
 }
 
 /* BASE TEXT FONTS */
 body {
-  font-family: "acumin-pro", Arial, Helvetica, sans-serif;
+  font-family: "Artigo", Georgia, "Times New Roman", Times, serif;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  font-family: "kepler-std-display", Georgia, "Times New Roman", Times, serif;
-  font-style: nomal;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "multi-text", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 /* BASE TYPOGRAPHY */
@@ -131,7 +131,7 @@ hr {
 /* SECTION HEADING */
 .section-heading {
   font-size: 1em;
-  font-family: "acumin-pro", Arial, Helvetica, sans-serif;
+  font-family: "multi-text", Arial, Helvetica, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -449,6 +449,14 @@ h6 {
 
 .container_video {
   diaplay: flex;
+}
+
+/* 12/2 */
+.row .one-half {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* SITE-NAV */
