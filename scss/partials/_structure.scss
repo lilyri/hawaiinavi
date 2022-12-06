@@ -124,3 +124,12 @@ section {
     width: 10%;
     display: flex;
 }
+
+.aside-content {
+    // display: flex;
+    justify-content: space-between;
+}
+
+label {
+    width: 300px;
+}

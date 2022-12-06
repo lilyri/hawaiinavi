@@ -459,6 +459,16 @@ h6 {
   display: flex;
 }
 
+.aside-content {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+label {
+  width: 300px;
+}
+
 /* SITE-NAV */
 .site-nav ul {
   margin: 0;
