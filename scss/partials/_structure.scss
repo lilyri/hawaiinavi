@@ -12,9 +12,10 @@
         display: flex;
         align-items: center;
 
-        h3 {
+        h1 {
             color: white;
             margin: 0;
+            font-size: 1.5em;
         }
     }
 
@@ -27,14 +28,7 @@
         text-decoration: none;
     }
 
-    h1 {
-        font-size: 1.5em;
-        margin: 0;
-    }
 
-    h4 {
-        margin: 0;
-    }
 
 }
 
@@ -116,7 +110,7 @@ section {
 }
 
 .container_video {
-    diaplay: flex;
+    display: flex;
 }
 
 /* 12/2 */

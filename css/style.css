@@ -39,11 +39,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* BASE TEXT FONTS */
 body {
-  font-family: "Artigo", Georgia, "Times New Roman", Times, serif;
+  font-family: arial;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "multi-text", Arial, Helvetica, sans-serif;
+  font-family: multi-text, arial;
   font-weight: 300;
   font-style: normal;
 }
@@ -65,12 +65,12 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2em;
   line-height: 1.1;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 1.2;
   text-align: center;
 }
@@ -78,21 +78,23 @@ h3 {
 h4 {
   font-size: 1.1em;
   line-height: 1;
+  text-align: center;
 }
 
 h5 {
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 1.1;
 }
 
 h6 {
-  font-size: 0.8em;
+  font-size: 0.7em;
   line-height: 1.2;
 }
 
 /* LIMIT NUMBER OF CHARACTERS PER LINE */
 p {
   max-width: 45em;
+  font-size: 0.7em;
 }
 
 /* LINKS */
@@ -131,13 +133,18 @@ hr {
 /* SECTION HEADING */
 .section-heading {
   font-size: 1em;
-  font-family: "multi-text", Arial, Helvetica, sans-serif;
+  font-family: multi-text, arial;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin: 3em 0;
 }
 
+/* 12/6 */
+/* .content-box {
+  width: 100px;
+  height: 400px;
+} */
 .hide-visually {
   position: absolute;
   top: -9999px;
@@ -234,7 +241,8 @@ body {
   .two-col-with-aside > section {
     width: 58.33%;
   }
-  .two-col-with-aside aside {
+  .two-col-with-aside aside,
+.two-col-with-aside .aside-content {
     width: 33.33%;
   }
 }
@@ -351,9 +359,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.site-header .site-id h3 {
+.site-header .site-id h1 {
   color: white;
   margin: 0;
+  font-size: 1.5em;
 }
 .site-header .logomark {
   margin-right: 0.7em;
@@ -361,13 +370,6 @@ body {
 .site-header a {
   color: white;
   text-decoration: none;
-}
-.site-header h1 {
-  font-size: 1.5em;
-  margin: 0;
-}
-.site-header h4 {
-  margin: 0;
 }
 
 /* SITE FOOTER */
@@ -448,7 +450,9 @@ h6 {
 }
 
 .container_video {
-  diaplay: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* 12/2 */
@@ -906,4 +910,20 @@ label {
           transform: translate(-50%, -50%);
   -webkit-transition: all 1s ease-out 0.5s;
   transition: all 1s ease-out 0.5s;
+}
+
+label,
+input {
+  display: block;
+}
+
+input {
+  margin-bottom: 1em;
+}
+input[type=text] {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
 }

@@ -17,8 +17,11 @@ $color-link-darker: #04715b;
 
 $color-lightgrey: rgba(0,0,0,.5);
 
-$font-family-sans: 'multi-text', Arial, Helvetica, sans-serif;
-$font-family-serif: 'Artigo', Georgia, 'Times New Roman', Times, serif;
+// $hn-headings-font: 'multi-text', Arial, Helvetica, sans-serif;
+// $font-family-serif: 'Artigo', Georgia, 'Times New Roman', Times, serif;
+
+$hn-headings-font: multi-text,arial;
+$hn-body-font: arial;
 
 //BREAKPOINTS
 $breakpoint-small: 768px;
@@ -39,4 +42,20 @@ $breakpoint-large: 1250px;
 
 // SUB PAGE//
 
- 
+//  FORM STYLING
+
+label,
+input {
+    display: block;
+}
+
+input {
+    margin-bottom: 1em;
+    &[type=text] {
+        width: 100%;
+    }
+}
+
+textarea {
+    width: 100%;
+}
