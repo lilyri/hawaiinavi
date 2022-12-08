@@ -41,7 +41,35 @@
         color: white;
         text-decoration: none;
     }
+
+    @media (min-width: $breakpoint-small){
+        .row {
+            justify-content: space-between;
+        }
+
+        .one-third { 
+            width: 25%; 
+        }
+    }
+
+    #email_form {
+        padding-top: 1em;
+        display: flex;
+
+        input[type="text"] {
+            padding: 0.8em;
+
+        }
+
+        input[type="submit"]{
+            background-color: red;
+
+        } 
+
+    }
+
 }
+
 
 .site-main {
     overflow-x: hidden;
@@ -66,6 +94,7 @@ section {
   .one-third {
     width: 26%;
     margin: 1%;
+    color: #AD8C08;
   }
 
 

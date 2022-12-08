@@ -381,6 +381,28 @@ body {
   color: white;
   text-decoration: none;
 }
+@media (min-width: 768px) {
+  .site-footer .row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .site-footer .one-third {
+    width: 25%;
+  }
+}
+.site-footer #email_form {
+  padding-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.site-footer #email_form input[type=text] {
+  padding: 0.8em;
+}
+.site-footer #email_form input[type=submit] {
+  background-color: red;
+}
 
 .site-main {
   overflow-x: hidden;
@@ -404,6 +426,7 @@ h6 {
 .one-third {
   width: 26%;
   margin: 1%;
+  color: #AD8C08;
 }
 
 /* HERO SECTION */
